@@ -1,0 +1,33 @@
+<div class="wrapper">
+    <form (ngSubmit)="submitForm()" #userForm="ngForm" novalidate>
+      <div class="title">
+        SIGN-UP
+      </div>
+      <div class="form">
+        <div class="inputfield">
+          <label for="name">NAME</label>
+          <input type="text" id="name" name="uname" class="input" [(ngModel)]="user.uname" required #name="ngModel">
+        </div>
+        <div class="inputfield">
+          <label for="email">E-MAIL</label>
+          <input type="email" id="email" name="uemail" class="input" [(ngModel)]="user.uemail" required ngModel>
+        </div>
+        <div class="inputfield">
+          <label for="mob">CONTACT</label>
+          <input type="tel" id="mob" name="umob" class="input" [(ngModel)]="user.umob" required>
+        </div>
+        <div class="inputfield">
+          <label for="password">PASSWORD</label>
+          <input type="password" id="password" name="upassword" class="input" [(ngModel)]="user.upassword" required>
+        </div>
+        <div class="inputfield">
+          <label for="confirmpass">CONFIRM PASSWORD</label>
+          <input type="password" id="confirmpass" name="uconfirmpass" class="input" [(ngModel)]="user.uconfirmpass" required>
+        </div>
+        
+        <div class="inputfield">
+          <input type="submit" value="Submit" id="submit" class="btn">
+        </div>
+      </div>
+    </form>
+</div>

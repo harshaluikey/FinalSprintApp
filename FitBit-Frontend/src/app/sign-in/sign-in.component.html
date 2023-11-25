@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="wrapper">
+        <div class="title"><span>LOG-IN</span></div>
+        <form action="/index" method="post">
+            <br>
+            <div class="row">
+                <i class="fas fa-user"></i>
+                <input type="email" name="uemail" class="inpt N" id="email" placeholder="Email-id" required>
+            </div>
+            <div class="row">
+                <i class="fas fa-lock"></i>
+                <input type="password" name="upassword" class="inpt N" placeholder="Password" required>
+            </div>
+            <div class="row button">
+                <input type="submit" value="Login Now" class="inpt" id="submit">
+            </div>
+            <div class="pass"><a routerLink="forgotPass" id="forgot">forgot password</a></div>
+            <div class="row" style="justify-content: space-between;">
+                <p id="accNew">New to FitBit ?</p>
+                <a routerLink="signUp" class="inpt" id="createBtn">Register Today!</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<router-outlet></router-outlet>

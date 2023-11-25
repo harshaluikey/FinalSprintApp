@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.banner{
+    background-image: url(/assets/images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: white;
+}
+
+.text{
+    margin-left: 45px;
+    margin-top: 0;
+    padding-top: 14.5%;
+}
+
+.text h1{
+    font-size: 80px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:  rgb(53, 178, 190);
+}
+
+.text h4{
+    font-size: 25px;
+    margin-top: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:  rgb(53, 178, 190);
+}
+
+.text button{
+    width: 150px;
+    height: 50px;
+    background-color: rgb(234, 20, 20);
+    color: white;
+    border: none;
+    margin-top: 50px;
+    font-size: 25px;
+    border-radius: 20px; 
+}
+
+button a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.text button:hover{
+    border: 5px solid rgb(53, 178, 190);
+    cursor: pointer;
+}

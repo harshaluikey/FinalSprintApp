@@ -1,0 +1,27 @@
+<div class="container mt-5">
+    <table class="table table-striped table-hover border border-50">
+        <thead>
+            <tr>
+                <th>ID</th>       
+                <th>NAME</th>
+                <th>EMAIL</th>
+                <th>CONTACT</th>
+                <th>PASSWORD</th>
+                <th>CONFIRM PASSWORD</th>
+                <th colspan="2" class="text-center">ACTION</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of users">
+                <td>{{user.id}}</td>
+                <td>{{user.uname}}</td>
+                <td>{{user.uemail}}</td>
+                <td>{{user.umob}}</td>
+                <td>{{user.upassword}}</td>
+                <td>{{user.uconfirmpass}}</td>
+                <td><button class="btn btn-danger" (click)="deleteUser(user.id)" >delete</button></td>
+                <td><button class="btn btn-primary"  >update</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
